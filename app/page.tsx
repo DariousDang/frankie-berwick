@@ -99,8 +99,8 @@ export default function Home() {
         <div className="hero-image-wrap">
           <img
             className="hero-image"
-            src="/brunch-spread.jpg"
-            alt="A generous Frankie’s brunch spread with burgers, tacos, eggs, coffee and iced drinks"
+            src="/burger-hero.png"
+            alt="A classic beef burger with cheese, salad and pickles, served with chips and takeaway coffee"
           />
           <div className="hero-sticker" aria-hidden="true">
             <span>LOCAL</span>
@@ -176,9 +176,12 @@ export default function Home() {
       </section>
 
       <section className="story-section" id="story">
-        <div className="story-image-wrap">
-          <img src="/cafe-interior.jpg" alt="Frankie’s light-filled cafe interior with warm timber tables" loading="lazy" />
-          <span className="image-caption">Pull up a chair</span>
+        <div className="story-poster" aria-hidden="true">
+          <span>MADE</span>
+          <strong>FRESH.</strong>
+          <span>PACKED</span>
+          <strong>FAST.</strong>
+          <i>Berwick’s local stop</i>
         </div>
         <div className="story-copy">
           <p className="eyebrow">Your neighbourhood spot</p>
