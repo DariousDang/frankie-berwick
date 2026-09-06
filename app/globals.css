@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --cream: oklch(0.965 0.022 84);
-  --ink: oklch(0.19 0.028 152);
-  --green: oklch(0.36 0.095 154);
-  --green-deep: oklch(0.245 0.061 154);
-  --lemon: oklch(0.88 0.171 95);
-  --tomato: oklch(0.61 0.205 32);
-  --line: oklch(0.36 0.095 154 / 0.24);
+  --cream: oklch(0.97 0.012 82);
+  --ink: oklch(0.19 0.023 150);
+  --green: oklch(0.34 0.07 153);
+  --green-deep: oklch(0.24 0.045 153);
+  --lemon: oklch(0.90 0.035 82);
+  --tomato: oklch(0.59 0.14 40);
+  --line: oklch(0.34 0.07 153 / 0.22);
 }
 
 * { box-sizing: border-box; }
@@ -96,7 +96,7 @@ nav a:hover::after { transform: scaleX(1); }
 }
 
 .hero {
-  background: var(--lemon);
+  background: var(--cream);
   display: grid;
   grid-template-columns: minmax(0, 1.03fr) minmax(380px, 0.97fr);
   min-height: calc(100svh - 82px);
@@ -183,7 +183,7 @@ h2 { font-size: clamp(3.5rem, 7vw, 7.2rem); }
 
 .ticker {
   align-items: center;
-  background: var(--tomato);
+  background: var(--green-deep);
   color: var(--cream);
   display: flex;
   font-family: var(--font-display), sans-serif;
@@ -195,7 +195,7 @@ h2 { font-size: clamp(3.5rem, 7vw, 7.2rem); }
   white-space: nowrap;
 }
 
-.ticker b { color: var(--lemon); }
+.ticker b { color: var(--tomato); }
 
 .menu-section { background: var(--green); color: var(--cream); padding: clamp(84px, 11vw, 170px) clamp(20px, 6vw, 96px); }
 .section-heading { display: grid; grid-template-columns: 0.8fr 1.35fr 0.85fr; margin-bottom: clamp(60px, 9vw, 128px); }
@@ -236,7 +236,7 @@ h2 { font-size: clamp(3.5rem, 7vw, 7.2rem); }
   text-transform: uppercase;
 }
 
-.drinks-panel { align-self: start; background: var(--lemon); color: var(--ink); padding: clamp(28px, 4vw, 52px); position: sticky; top: 110px; }
+.drinks-panel { align-self: start; background: var(--cream); color: var(--ink); padding: clamp(28px, 4vw, 52px); position: sticky; top: 110px; }
 .panel-kicker { font-size: 0.68rem; font-weight: 950; letter-spacing: 0.16em; text-transform: uppercase; }
 .drinks-panel h3 { font-family: var(--font-display), sans-serif; font-size: clamp(2.5rem, 4vw, 4.2rem); font-weight: 400; line-height: 0.95; margin-bottom: 38px; }
 .drink-list { border-top: 2px solid var(--ink); }
@@ -276,7 +276,7 @@ details img { background: var(--cream); margin-bottom: 24px; width: 100%; }
 .story-section { display: grid; grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr); }
 .story-poster {
   align-items: flex-start;
-  background: var(--tomato);
+  background: var(--green-deep);
   color: var(--cream);
   display: flex;
   flex-direction: column;
@@ -286,9 +286,9 @@ details img { background: var(--cream); margin-bottom: 24px; width: 100%; }
   padding: clamp(50px, 8vw, 120px);
   position: relative;
 }
-.story-poster::after { border: 2px solid var(--lemon); content: ""; inset: 28px; pointer-events: none; position: absolute; }
+.story-poster::after { border: 2px solid var(--tomato); content: ""; inset: 28px; pointer-events: none; position: absolute; }
 .story-poster span { font-size: clamp(1rem, 1.8vw, 1.45rem); font-weight: 950; letter-spacing: 0.22em; }
-.story-poster strong { color: var(--lemon); font-family: var(--font-display), sans-serif; font-size: clamp(4.6rem, 9vw, 9.5rem); font-weight: 400; letter-spacing: -0.04em; line-height: 0.78; margin: 8px 0 26px; }
+.story-poster strong { color: var(--cream); font-family: var(--font-display), sans-serif; font-size: clamp(4.6rem, 9vw, 9.5rem); font-weight: 400; letter-spacing: -0.04em; line-height: 0.78; margin: 8px 0 26px; }
 .story-poster i { border-top: 1px solid var(--cream); font-size: 0.78rem; font-style: normal; font-weight: 900; letter-spacing: 0.14em; margin-top: 32px; padding-top: 14px; text-transform: uppercase; }
 .story-copy { align-items: flex-start; display: flex; flex-direction: column; justify-content: center; padding: clamp(70px, 10vw, 150px) clamp(28px, 8vw, 125px); }
 .story-copy h2 { font-size: clamp(3.2rem, 6.2vw, 6.2rem); margin-bottom: 34px; max-width: 10ch; }
@@ -311,7 +311,7 @@ details img { background: var(--cream); margin-bottom: 24px; width: 100%; }
 .hours span { color: oklch(0.965 0.022 84 / 0.72); }
 .holiday-note { color: oklch(0.965 0.022 84 / 0.58); font-size: 0.73rem; margin: 22px 0 0; max-width: 50ch; }
 
-footer { align-items: center; background: var(--lemon); display: grid; gap: 22px; grid-template-columns: 1fr auto 1fr; padding: 36px clamp(22px, 6vw, 90px); }
+footer { align-items: center; background: var(--cream); border-top: 1px solid var(--line); display: grid; gap: 22px; grid-template-columns: 1fr auto 1fr; padding: 36px clamp(22px, 6vw, 90px); }
 footer p { font-size: 0.86rem; font-weight: 850; margin: 0; }
 footer > a:last-child { font-size: 0.72rem; font-weight: 950; justify-self: end; letter-spacing: 0.1em; text-transform: uppercase; }
 
