@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://frankies-berwick.thanhphucdangdo.chatgpt.site"),
   title: "Frankie’s Berwick | Cafe, Burgers & Takeaway",
   description:
-    "Coffee, bold brunch, stacked burgers and easy takeaway at Frankie’s Berwick, Eden Rise Village.",
+    "Coffee, stacked burgers, loaded fries and easy takeaway at Frankie’s Berwick, Eden Rise Village.",
   openGraph: {
     title: "Frankie’s Berwick",
     description: "Big flavour. Good mood. Cafe, burgers and takeaway in Berwick.",

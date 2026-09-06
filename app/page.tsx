@@ -1,61 +1,60 @@
 const foodHighlights = [
   {
-    name: "Burger with the Lot",
-    price: "$27",
+    name: "The Monster",
+    price: "$19",
     description:
-      "Beef patty, bacon, chilli bacon jam, fried egg, onion, lettuce, cheese, tomato, pineapple, pickles and house sauce. Served with chips.",
-    badge: "CGF",
+      "Beef patty, chicken schnitzel, double cheese, lettuce, tomato, red onion, aioli and BBQ sauce.",
+    badge: "Frankie’s special",
   },
   {
-    name: "Fried Chicken Burger",
-    price: "$26",
+    name: "The Lot",
+    price: "$17",
     description:
-      "Crispy fried chicken, bacon, lettuce, cheese, tomato, pickles and sriracha mayo. Served with chips.",
+      "Beef patty, fried egg, bacon, pineapple, cheese, lettuce, tomato, red onion, Frankie’s mayo and ketchup.",
+    badge: "GF option",
   },
   {
-    name: "Saigon Breakfast Pan",
-    price: "$28",
+    name: "The Schmitty",
+    price: "$15",
     description:
-      "Vietnamese-style sizzling hotplate with sliced beef, a fried egg, chorizo, pâté, chips and homemade tomato sauce.",
-    badge: "Frankie’s signature",
+      "Chicken schnitzel, cheese, bacon, lettuce, coleslaw and aioli.",
+  },
+  {
+    name: "The Porky",
+    price: "$17",
+    description:
+      "Slow-cooked pulled pork, cheese, lettuce, coleslaw, spring onion and spicy mayo.",
+    badge: "GF option",
   },
   {
     name: "Banh Mi Taco",
-    price: "$25",
+    price: "$15",
     description:
-      "Three soft tacos with fried chicken or tofu, butter, pâté, fresh salad, jalapeño, shallot and coriander.",
-    badge: "CVG",
+      "Beksul fried chicken or fried tofu, Vietnamese pâté, coleslaw, jalapeños, spring onion, lettuce, sriracha mayo and hoisin sauce.",
   },
   {
-    name: "Smashed Avo",
-    price: "$24",
-    description:
-      "Poached eggs, smashed avocado, beetroot hummus, feta, balsamic glaze, lemon and dukkah.",
-    badge: "V · CVG · CGF",
-  },
-  {
-    name: "Pulled Pork Loaded Chips",
+    name: "The Velvet",
     price: "$16",
     description:
-      "Crispy chips, slow-cooked pulled pork, jalapeños, coriander, cheese sauce, barbecue sauce and mayo.",
+      "Double croquette, double cheese, lettuce, carrot, cabbage and aioli.",
+    badge: "Vegetarian",
   },
 ];
 
 const drinks = [
-  ["Salted Viet Iced Coffee", "$9"],
-  ["Creamy Iced Matcha", "$9"],
-  ["Strawberry Iced Matcha", "$9"],
-  ["Coconut Cloud Matcha", "$9"],
-  ["Blue Strawberry Soda", "$8"],
-  ["Peach Iced Tea", "$8"],
-  ["Milkshakes", "$8"],
-  ["Smoothies", "$12"],
+  ["Long Black", "from $5"],
+  ["Latte", "from $5"],
+  ["Cappuccino", "from $5"],
+  ["Mocha", "from $6"],
+  ["Iced Coffee", "$8.50"],
+  ["Bubble Tea", "from $7"],
+  ["Milkshakes", "from $7"],
+  ["Smoothies", "from $7.50"],
 ];
 
 const hours = [
-  ["Monday to Friday", "6:30am – 4pm"],
-  ["Saturday", "7am – 3pm"],
-  ["Sunday", "8am – 3pm"],
+  ["Coffee & cafe", "Open daily"],
+  ["Lunch & dinner", "12pm – 9pm"],
 ];
 
 export default function Home() {
@@ -63,7 +62,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Frankie’s Berwick home">
-          <span>FRANKIE SAYS</span>
+          <span>FRANKIE’S</span>
           <small>BERWICK</small>
         </a>
         <nav aria-label="Main navigation">
@@ -81,7 +80,7 @@ export default function Home() {
           <p className="eyebrow">Cafe · burgers · takeaway</p>
           <h1>Big flavour.<br />Good mood.</h1>
           <p className="hero-intro">
-            Berwick’s easygoing stop for stacked burgers, bold brunch and a seriously good coffee.
+            Berwick’s easygoing stop for stacked burgers, cafe favourites and a seriously good coffee.
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href="#menu">See the menu</a>
@@ -113,14 +112,14 @@ export default function Home() {
         <span>Burgers worth the detour</span><b>✦</b>
         <span>Coffee done properly</span><b>✦</b>
         <span>Takeaway made easy</span><b>✦</b>
-        <span>Brunch all day</span>
+        <span>Lunch &amp; dinner 12–9</span>
       </div>
 
       <section className="menu-section" id="menu">
         <div className="section-heading">
           <p className="eyebrow">The good stuff</p>
           <h2>Come hungry.</h2>
-          <p>Comfort-food favourites with a fresh Vietnamese twist, plus plenty for little Frankies.</p>
+          <p>Classic beef and chicken burgers, big Frankie’s specials, loaded fries and vegetarian choices.</p>
         </div>
 
         <div className="food-layout">
@@ -148,7 +147,7 @@ export default function Home() {
                 <div key={name}><span>{name}</span><strong>{price}</strong></div>
               ))}
             </div>
-            <p className="coffee-note">Classic coffee starts at $3.50. Alternative milk, syrups and extra shots available.</p>
+            <p className="coffee-note">Espresso starts at $3. Alternative milk and flavour shots are available for $1 extra.</p>
           </aside>
         </div>
 
@@ -159,19 +158,19 @@ export default function Home() {
           </div>
           <div className="menu-downloads">
             <details>
-              <summary>Food menu <span>View ↘</span></summary>
-              <a href="/food-menu.webp" target="_blank" rel="noreferrer" aria-label="Open full food menu in a new tab">
-                <img src="/food-menu.webp" alt="Frankie’s full food menu with all-day, lunch, dinner, kids, sides and add-ons" loading="lazy" />
+              <summary>Lunch &amp; dinner <span>View ↘</span></summary>
+              <a href="/burger-menu.jpg" target="_blank" rel="noreferrer" aria-label="Open Frankie’s lunch and dinner menu in a new tab">
+                <img src="/burger-menu.jpg" alt="Frankie’s lunch and dinner menu with beef burgers, chicken burgers, specials, vegetarian burgers, sides and add-ons" loading="lazy" />
               </a>
             </details>
             <details>
-              <summary>Drinks menu <span>View ↘</span></summary>
-              <a href="/drinks-menu.webp" target="_blank" rel="noreferrer" aria-label="Open full drinks menu in a new tab">
-                <img src="/drinks-menu.webp" alt="Frankie’s drinks menu with coffee, non-coffee drinks, specials, smoothies and alcohol" loading="lazy" />
+              <summary>Coffee &amp; cafe <span>View ↘</span></summary>
+              <a href="/coffee-menu.jpg" target="_blank" rel="noreferrer" aria-label="Open Frankie’s coffee menu in a new tab">
+                <img src="/coffee-menu.jpg" alt="Frankie’s coffee menu with hot and iced coffee, tea, bubble tea, milkshakes, smoothies, desserts and cafe food" loading="lazy" />
               </a>
             </details>
           </div>
-          <p className="menu-fineprint">V: vegetarian · VG: vegan · CVG: can be vegan · CGF: can be gluten free. A 10% surcharge applies on weekends and a 1.15% card surcharge applies.</p>
+          <p className="menu-fineprint">GF: gluten-free option · V: vegetarian. Gluten-free and vegan options are available for $2 extra. Please tell the team about any allergies when ordering.</p>
         </div>
       </section>
 
@@ -187,11 +186,11 @@ export default function Home() {
           <p className="eyebrow">Your neighbourhood spot</p>
           <h2>Fast when you need it. Relaxed when you don’t.</h2>
           <p>
-            Swing by for an early coffee, a late breakfast or lunch on the go. Frankie’s keeps things friendly, flexible and full of flavour, with takeaway favourites and options for a range of dietary needs.
+            Swing by for coffee on the run, a quick lunch or a stacked burger for dinner. Frankie’s keeps things friendly, flexible and full of flavour, with takeaway favourites and options for a range of dietary needs.
           </p>
           <div className="story-points">
             <div><strong>Made for takeaway</strong><span>Call ahead and skip the wait.</span></div>
-            <div><strong>Something for everyone</strong><span>Vegetarian, vegan and gluten-friendly choices.</span></div>
+            <div><strong>Something for everyone</strong><span>Vegetarian, vegan-option and gluten-free-option choices.</span></div>
             <div><strong>Good company</strong><span>Friendly faces, warm service, zero fuss.</span></div>
           </div>
         </div>
@@ -208,7 +207,7 @@ export default function Home() {
             <p>Kiosk 1, Eden Rise Village<br />Clyde Road &amp; O’Shea Road<br />Berwick VIC 3806</p>
             <div className="visit-actions">
               <a className="button button-light" href="tel:+61387868405">03 8786 8405</a>
-              <a className="text-link light" href="https://instagram.com/frankiesays" target="_blank" rel="noreferrer">@frankiesays ↗</a>
+              <a className="text-link light" href="https://www.google.com/maps/search/?api=1&query=Frankies+Cafe+Eden+Rise+Village+Berwick" target="_blank" rel="noreferrer">Get directions ↗</a>
             </div>
           </div>
           <div className="hours">
@@ -216,14 +215,14 @@ export default function Home() {
             {hours.map(([day, time]) => (
               <div key={day}><span>{day}</span><strong>{time}</strong></div>
             ))}
-            <p className="holiday-note">Closed on Victorian public holidays. Hours can change, call ahead if you’re making a special trip.</p>
+            <p className="holiday-note">The lunch and dinner menu states 12pm to 9pm. Call ahead to confirm daily trading hours before making a special trip.</p>
           </div>
         </div>
       </section>
 
       <footer>
         <a className="brand footer-brand" href="#top">
-          <span>FRANKIE SAYS</span><small>BERWICK</small>
+          <span>FRANKIE’S</span><small>BERWICK</small>
         </a>
         <p>Good food. Good coffee. Good people.</p>
         <a href="#top">Back to top ↑</a>
