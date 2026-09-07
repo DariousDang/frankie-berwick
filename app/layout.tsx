@@ -15,13 +15,28 @@ const body = Nunito_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://frankies-berwick.thanhphucdangdo.chatgpt.site"),
-  title: "Frankie’s Berwick | Cafe, Burgers & Takeaway",
+  title: "Frankie’s Berwick | Burgers, Coffee & Takeaway",
   description:
-    "Coffee, stacked burgers, loaded fries and easy takeaway at Frankie’s Berwick, Eden Rise Village.",
+    "Stacked burgers, café favourites and coffee at Frankie’s Berwick, Eden Rise Village. Call ahead for easy takeaway.",
   openGraph: {
     title: "Frankie’s Berwick",
-    description: "Big flavour. Good mood. Cafe, burgers and takeaway in Berwick.",
+    description: "Big bites. Good coffee. Zero fuss. Café, burgers and takeaway in Berwick.",
     type: "website",
+    locale: "en_AU",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Frankie’s Berwick, big bites, good coffee, zero fuss",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frankie’s Berwick",
+    description: "Big bites. Good coffee. Zero fuss.",
+    images: ["/og.png"],
   },
 };
 
