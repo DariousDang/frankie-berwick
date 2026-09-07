@@ -17,7 +17,7 @@ const favourites = [
   },
   {
     number: "03",
-    name: "The Schmitty",
+    name: "The Schnitty",
     price: "$15",
     description:
       "Chicken schnitzel, cheese, bacon, lettuce, coleslaw and aioli.",
@@ -33,11 +33,11 @@ const favourites = [
   },
   {
     number: "05",
-    name: "Banh Mi Taco",
-    price: "$15",
+    name: "Vietnamese Crispy Pork Roll",
+    price: "$14",
     description:
-      "Beksul fried chicken or fried tofu, Vietnamese pâté, coleslaw, jalapeños, spring onion, lettuce, sriracha mayo and hoisin.",
-    note: "A little different",
+      "Crispy pork, Vietnamese pâté, cucumber, carrot, lettuce, spring onion, caramelised onion and hoisin sauce.",
+    note: "Crispy pork",
   },
   {
     number: "06",
@@ -72,7 +72,7 @@ export default function Home() {
 
       <div className="service-strip">
         <p>Open 7 days at Eden Rise Village</p>
-        <p className="service-strip-desktop">Lunch &amp; dinner, 12 pm to 9 pm</p>
+        <p className="service-strip-desktop">Lunch &amp; dinner, 12 pm to 8 pm</p>
         <a href="tel:+61387868405">03 8786 8405</a>
       </div>
 
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
             <div className="hero-caption">
               <span>Lunch &amp; dinner</span>
-              <strong>12–9 daily</strong>
+              <strong>12–8 daily</strong>
             </div>
           </div>
         </section>
@@ -296,7 +296,7 @@ export default function Home() {
             </div>
             <div>
               <p className="detail-label">Kitchen hours</p>
-              <p>Lunch &amp; dinner<br /><strong>12 pm to 9 pm, daily</strong></p>
+              <p>Lunch &amp; dinner<br /><strong>12 pm to 8 pm, daily</strong></p>
               <p className="hours-note">Call ahead to confirm café hours before making a special trip.</p>
             </div>
             <div>
